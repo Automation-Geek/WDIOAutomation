@@ -32,6 +32,7 @@ it("Should display the grids Column Name Header", () => {
    */
 
   GridPage.colName.forEach((el) => {
+    
     expect(el.isDisplayed()).to.eql(true);
   });
 
