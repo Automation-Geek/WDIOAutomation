@@ -42,7 +42,7 @@ exports.config = {
         debug: true,
         outputDir: "./reports/html-reports/",
         filename: "report.html",
-        reportTitle: "GoodRX Test Report",
+        reportTitle: "Testing  Test Report",
 
         //to show the report in a browser when done
         showInBrowser: true,

@@ -26,4 +26,31 @@ export class GridPage {
   public static get columnHeader() {
     return $$('[aria-rowindex="1"] > [role="columnheader"]');
   }
+
+  public static get columnHeaderText() {
+    return $$('[aria-rowindex="1"] > [role="columnheader"] [ref="agLabel"]');
+  }
+  
+  public static get rightSideBarPrimaryColumnText() {
+    return $$('div [ref="eTitleBar"] span[ref="eTitle"]');
+  }
+ 
+  public static get rightSideBarSecondryColumnText() {
+    return $$('div[ref="eFilterToolPanelHeader"] span[ref="eFilterName"]');
+  }
+  
+  public static get filtersButton() {
+    return $('//button[contains(.,"Filters")]');
+  }
+  
+  public static get inputValueOfName() {
+    return $("//input[@class='ag-floating-filter-input']");
+  }
+
+  public static get getRowCountValue() {
+    return $$(" //div[@role='row']//span[@ref='eCellValue']");
+  }
+  
+ 
+
 }

@@ -2,13 +2,16 @@ const defaults = require("./wdio.conf.js").config;
 const _ = require("lodash");
 
 const overrides = {
+
   capabilities: [
     {
       browserName: "chrome",
       "goog:chromeOptions": {
-        args: ["--disable-infobars", "--incognito"],
+        "excludeSwitches": [ "enable-automation" ],
+        "useAutomationExtension": false
+      }
       },
-    },
+
   ],
 
   /**
