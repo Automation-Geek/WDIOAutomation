@@ -43,12 +43,22 @@ export class GridPage {
     return $('//button[contains(.,"Filters")]');
   }
   
+  public static get monthlyBreakDown() {
+    return $('//div[@ref="filtersToolPanelListPanel"]//span[contains(.,"Monthly Breakdown")]');
+  }
+  
+  public static get monthOctoberLink() {
+    return $('//span[@ref="eFilterName" and contains(.,"Oct")]');
+  }
+
+
+  
   public static get inputValueOfName() {
     return $("//input[@class='ag-floating-filter-input']");
   }
 
   public static get getRowCountValueInGrid() {
-    return $$(" //div[@role='row']//span[@ref='eCellValue']");
+    return $$("//div[@role='row']//span[@ref='eCellValue']");
   }
   
  
