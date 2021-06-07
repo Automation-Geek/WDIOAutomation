@@ -47,7 +47,7 @@ export class GridPage {
     return $("//input[@class='ag-floating-filter-input']");
   }
 
-  public static get getRowCountValue() {
+  public static get getRowCountValueInGrid() {
     return $$(" //div[@role='row']//span[@ref='eCellValue']");
   }
   
